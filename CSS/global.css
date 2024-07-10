@@ -94,6 +94,10 @@ iframe {
   transform: scale(0);
 }
 
+fieldset {
+  border: none;
+}
+
 blockquote {
   margin: 0;
 }

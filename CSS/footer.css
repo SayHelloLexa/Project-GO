@@ -1,6 +1,11 @@
 footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+}
+
+.footer__container .flex-container {
+  justify-content: space-between;
+  margin-bottom: 156px;
 }
 
 .address {
@@ -69,3 +74,29 @@ footer {
   width: 280px;
   justify-content: space-between;
 }
+
+.footer__container .flex-container_copyright {
+  margin-bottom: 10px;
+}
+
+.flex-item span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #fff;
+}
+
+.flex-item__span_block {
+  display: block;
+}
+
+.flex-item__span_margin {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.flex-item__span_indent {
+  display: block;
+  text-indent: 22px;
+}
+

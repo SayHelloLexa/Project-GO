@@ -1,5 +1,108 @@
 .reservation-form {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+  background: #440f51;
   color: #ffff;
 }
+
+.fieldset {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.legend {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #fff;
+}
+
+.reservation-form__btn_radio {
+  display: block;
+  width: 250px;
+  height: 55px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.reservation-form__btn_radio input[type="radio"] {
+  display: none;
+}
+
+.reservation-form__btn_radio label {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+.fieldset_first-section .flex-container {
+  justify-content: center;
+  column-gap: 60px;
+}
+
+.fieldset_set .flex-container {
+  column-gap: 100px;
+}
+
+.fieldset_flex-direction_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+
+.fieldset_flex-direction_column label {
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+}
+
+.fieldset_flex-direction_column input[type="radio"] {
+  display: inline-block;
+}
+
+.fieldset_second-section {
+  margin-bottom: 40px;
+}
+
+.fieldset_second-section .flex-container {
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  padding-left: 680px;
+}
+
+.btn-container button[type="submit"] {
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #6c0287;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
