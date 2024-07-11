@@ -39,8 +39,11 @@
   margin-bottom: 40px;
 }
 
-.quote:before {
+.about__quote:before {
   content: "“";
+  position: absolute;
+  left: 680px;
+  bottom: 286px;
   display: inline-block;
   font-weight: 900;
   font-size: 44px;
@@ -48,8 +51,10 @@
   color: #6c0287;
 }
 
-.quote:after {
+.about__quote:after {
   content: "”";
+  position: absolute;
+  left: 1044px;
   display: inline-block;
   font-weight: 900;
   font-size: 44px;

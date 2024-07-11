@@ -3,3 +3,39 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.menu__item {
+  display: block;
+  width: 380px;
+  height: 228px;
+  padding-top: 166px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.menu__item_vr {
+  background-image: url("../img/vr.jpg");
+}
+
+.menu__item_audio {
+  background-image: url("../img/audio.jpg");
+}
+
+.menu__item_karaoke {
+  background-image: url("../img/karaoke.jpg");
+}
+
+.menu__item_board-games {
+  background-image: url("../img/board-games.jpg");
+}
+
+.menu__item_movies {
+  background-image: url("../img/movies.jpg");
+}
+
+.menu__item_playstation {
+  background-image: url("../img/playstation.jpg");
+}

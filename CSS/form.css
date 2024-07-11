@@ -1,13 +1,15 @@
+.reserv {
+  background: #440f51;
+}
+
 .reservation-form {
   padding-top: 50px;
   padding-bottom: 80px;
-  background: #440f51;
   color: #ffff;
 }
 
 .fieldset {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .legend {
@@ -19,44 +21,83 @@
   color: #fff;
 }
 
-.reservation-form__btn_radio {
-  display: block;
-  width: 250px;
-  height: 55px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-radius: 8px;
-  background: #fff;
+.flex-container_rooms {
+  margin-bottom: 60px;
 }
 
-.reservation-form__btn_radio input[type="radio"] {
+.flex-container_rooms input[type="radio"] {
   display: none;
 }
 
-.reservation-form__btn_radio label {
+.flex-container_rooms label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+  background: #fff;
   font-weight: 700;
   font-size: 30px;
   line-height: 133%;
-  cursor: pointer;
   text-transform: uppercase;
-  text-align: center;
   color: #000;
 }
 
-.fieldset_first-section .flex-container {
+.fieldset_rooms .flex-container {
   justify-content: center;
   column-gap: 60px;
 }
 
-.fieldset_set .flex-container {
+.fieldset_set {
+  width: 1080px;
+  padding-left: 100px;
+}
+
+.fieldset_set .flex-container_console {
+  flex-grow: 1;
+  margin-bottom: 60px;
   column-gap: 100px;
 }
 
 .fieldset_flex-direction_column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   row-gap: 20px;
+}
+
+.fieldset_flex-direction_column legend {
+  text-align: left;
+}
+
+.console {
+  display: flex;
+  column-gap: 12px;
+}
+
+.console input {
+  width: 27px;
+  height: 27px;
+}
+
+.b-games {
+  display: flex;
+  column-gap: 12px;
+}
+
+.b-games input {
+  width: 27px;
+  height: 27px;
+}
+
+.more {
+  display: flex;
+  column-gap: 12px;
+}
+
+.more input {
+  width: 27px;
+  height: 27px;
 }
 
 .fieldset_flex-direction_column label {
@@ -65,20 +106,129 @@
   color: #fff;
 }
 
-.fieldset_flex-direction_column input[type="radio"] {
-  display: inline-block;
+.fieldset_date {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.fieldset_second-section {
+.fieldset_date input {
+  border: none;
+}
+
+.fieldset_date .flex-container_date {
+  display: flex;
+  column-gap: 50px;
   margin-bottom: 40px;
 }
 
-.fieldset_second-section .flex-container {
-  flex-wrap: wrap;
+.date__group-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 36px;
+}
+
+.row-group {
+  display: flex;
+  column-gap: 32px;
+}
+
+.dmy {
+  width: 134px;
+  padding: 12px 70px 12px 20px;
+}
+
+.dmy::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #211e1e;
+}
+
+.time {
+  width: 134px;
+  padding: 12px 57px 12px 20px;
+}
+
+.time::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #211e1e;
+}
+
+.person-number {
+  width: 300px;
+  padding: 12px 134px 12px 20px;
+}
+
+.person-number::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #211e1e;
+}
+
+.date__group-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.col-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-group input {
+  width: 280px;
+  height: 52px;
+}
+
+.name {
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #fff;
+}
+
+.surname {
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #fff;
+}
+
+.date__group-3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.date__group-3 input {
+  width: 300px;
+}
+
+.phone-number {
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #fff;
+}
+
+.email {
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #fff;
 }
 
 .btn-container {
-  padding-left: 680px;
+  padding-left: 780px;
 }
 
 .btn-container button[type="submit"] {
@@ -91,6 +241,8 @@
   text-transform: uppercase;
   color: #6c0287;
 }
+
+
 
 
 

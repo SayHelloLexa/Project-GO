@@ -65,8 +65,9 @@
   color: #fff;
 }
 
-.intro__button {
+.intro__reserv-link {
   display: block;
+  padding: 25px 69px 25px 69px;
   border-radius: 10px;
   border: none;
   width: 374px;

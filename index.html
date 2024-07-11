@@ -26,7 +26,7 @@
         </ul>
       </nav>
 
-      <a href="#" class="tel">Заказать звонок</a>
+      <button class="tel">Заказать звонок</button>
     </div>
   </header>
 
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <button class="intro__button" type="submit">Забронировать</button>
+      <a class="intro__reserv-link" href="#reserv">Забронировать</a>
 
       <a class="down-button" href="#">
         <img src="img/down-button.svg" alt="кнопка вниз">
@@ -64,12 +64,12 @@
         <h2 class="container__title">У нас есть все для классного <br> отдыха с друзьями!</h2>
 
         <ul class="menu__list">
-          <li class="menu__item"><img src="img/vr.jpg" alt="vr"></li>
-          <li class="menu__item"><img src="img/audio.jpg" alt="аудио-система"></li>
-          <li class="menu__item"><img src="img/karaoke.jpg" alt="караоке"></li>
-          <li class="menu__item"><img src="img/board-games.jpg" alt="настольные игры"></li>
-          <li class="menu__item"><img src="img/movies.jpg" alt="фильмы и сериалы"></li>
-          <li class="menu__item"><img src="img/playstation.jpg" alt="playstation"></li>
+          <li class="menu__item menu__item_vr"><p>VR очки</p></li>
+          <li class="menu__item menu__item_audio"><p>Аудио-система 5.1 <br> с отличным звуком</p></li>
+          <li class="menu__item menu__item_karaoke"><p>Караоке (4микрофона)</p></li>
+          <li class="menu__item menu__item_board-games"><p>Настольные игры</p></li>
+          <li class="menu__item menu__item_movies"><p>Кино сервисы Netflix, IVI, <br> MegoGo, КиноПоиск, Okko</p></li>
+          <li class="menu__item menu__item_playstation"><p>РlаyStаtiоn 5</p></li>
         </ul>
       </div>
     </section>
@@ -81,128 +81,161 @@
         <h2 class="container__title" id="spot">Наши залы</h2>
 
         <ol class="halls__list">
-          <li class="halls__list-item halls__list-item_background_vibes"><a class="halls__list-item-link" href="vibes.html">80's vibes</a></li>
-          <li class="halls__list-item halls__list-item_background_starwars"><a class="halls__list-item-link" href="starwars.html">Star wars</a></li>
-          <li class="halls__list-item halls__list-item_background_wildwest"><a class="halls__list-item-link" href="wildwest.html">Wild west</a></li>
-          <li class="halls__list-item halls__list-item_background_neon"><a class="halls__list-item-link" href="neon.html">Neon style</a></li>
+          <li class="halls__list-item"><a class="halls__list-item-link halls__list-item-link_vibes" href="vibes.html"><p>80's vibes</p></a></li>
+          <li class="halls__list-item"><a class="halls__list-item-link halls__list-item-link_star-wars" href="starwars.html"><p>Star wars</p></a></li>
+          <li class="halls__list-item"><a class="halls__list-item-link halls__list-item-link_wild-west" href="wildwest.html"><p>Wild west</p></a></li>
+          <li class="halls__list-item"><a class="halls__list-item-link halls__list-item-link_neon" href="neon.html"><p>Neon style</p></a></li>
         </ol>
       </div>
     </section>
 
-    <form 
-    class="reservation-form"
-    action="https://jsonplaceholder.typicode.com/posts"
-    method="POST"
-    >
-      <div class="container reservation-form__container">
-        <h2 class="container__title" id="reserv">Забронировать зал просто</h2>
+    <section class="reserv">
+      <div class="container">
+        <form 
+        class="reservation-form"
+        action="https://jsonplaceholder.typicode.com/posts"
+        method="POST"
+        >
+      
+          <h2 class="container__title" id="reserv">Забронировать зал просто</h2>
 
-        <fieldset class="fieldset fieldset_first-section">
-          <legend class="legend">Выбери зал</legend>
-        
-          <div class="flex-container">
-            <div class="reservation-form__btn_radio">
-              <input type="radio" name="reservation" value="vibes" id="vib">
-              <label for="vib">80's vibes</label>
-            </div>
+          <fieldset class="fieldset fieldset_rooms">
+            <legend class="legend">Выбери зал</legend>
+          
+            <div class="flex-container flex-container_rooms">
+                <input type="radio" name="reservation" value="vibes" id="vib">
+                <label for="vib">80's vibes</label>
 
-            <div class="reservation-form__btn_radio">
-              <input type="radio" name="reservation" value="star" id="sw">
-              <label for="sw">star wars</label>
-            </div>
-
-            <div class="reservation-form__btn_radio">
-              <input type="radio" name="reservation" value="wild" id="ww">
-              <label for="ww">wild west</label>
-            </div>
-
-            <div class="reservation-form__btn_radio">
-              <input type="radio" name="reservation" value="neon" id="ns">
-              <label for="ns">neon style</label>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="fieldset fieldset_set">
-          <legend class="legend">Собери набор развлечений</legend>
-
-          <div class="flex-container">
-            <fieldset class="fieldset fieldset_flex-direction_column">
-              <legend class="legend">Приставка: </legend>
-    
-              <input type="radio" name="game-console" value="playstation" id="ps">
-              <label for="ps">PlayStation</label>
+                <input type="radio" name="reservation" value="star" id="sw">
+                <label for="sw">star wars</label>
               
-              <input type="radio" name="game-console" value="segamegadrive" id="smd">
-              <label for="smd">Sega Mega Drive</label>
-            
-              <input type="radio" name="game-console" value="x-box" id="xbox">
-              <label for="xbox">X-box One S</label>
-
-              <input type="radio" name="game-console" value="dendy" id="den">
-              <label for="den">Dendy</label>
-            </fieldset>
-            
-            
-            <fieldset class="fieldset fieldset_flex-direction_column">
-              <legend class="legend">Настольные игры: </legend>
-  
-              <input type="checkbox" name="table-game" value="jenga" id="jen">
-              <label for="jen">Jenga</label>
-  
-              <input type="checkbox" name="table-game" value="monopoly" id="monop">
-              <label for="monop">Monopoly</label>
-  
-              <input type="checkbox" name="table-game" value="munchkin" id="munchk">
-              <label for="munchk">Манчкин</label>
-  
-              <input type="checkbox" name="table-game" value="alias" id="al">
-              <label for="al">Alias</label>
-            </fieldset>
-            
-            
-  
-            <fieldset class="fieldset fieldset_flex-direction_column">
-              <legend class="legend">Дополнительно: </legend>
-  
-              <input type="checkbox" name="extra" value="micro" id="micro">
-              <label for="micro">Караоке</label>
-  
-              <input type="checkbox" name="extra" value="vr" id="vr">
-              <label for="vr">VR</label>
-            </fieldset>
-          </div>
-        </fieldset>
-
-          <fieldset class="fieldset fieldset_second-section">
-            <legend class="legend">Выбери дату и время </legend>
-
-            <div class="flex-container">
-              <label for="dt">Дата</label>
-              <input type="date" name="date" id="dt" required>
-
-              <label for="tm">Время</label>
-              <input type="time" name="time" id="tm" required>
-
-              <label for="cnt">Количество человек</label>
-              <input type="number" min="1" name="count" id="cnt" required>
-
-              <label for="nme">Имя</label>
-              <input type="text" name="guest-name" id="nme" required>
-
-              <label for="srnme">Фамилия</label>
-              <input type="text" name="quest-surname" id="srnme" required>
-
-              <label for="phn">Номер телефона</label>
-              <input type="tel" name="guest-pnone-number" id="phn" pattern="^\+?7-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" title="+7-___-___-__-__" required>
+                <input type="radio" name="reservation" value="wild" id="ww">
+                <label for="ww">wild west</label>
+              
+                <input type="radio" name="reservation" value="neon" id="ns">
+                <label for="ns">neon style</label>
             </div>
-        </fieldset>
+          </fieldset>
 
-        <div class="btn-container">
-          <button type="submit">Забронировать</button>
-        </div>
+          <fieldset class="fieldset fieldset_set">
+            <legend class="legend">Собери набор развлечений</legend>
+
+            <div class="flex-container flex-container_console">
+              <fieldset class="fieldset fieldset_flex-direction_column">
+                <legend class="legend">Приставка: </legend>
+      
+                <label class="console" for="ps">
+                  <input type="radio" name="game-console" value="playstation" id="ps">
+                  PlayStation
+                </label>
+                
+                <label class="console" for="smd">
+                  <input type="radio" name="game-console" value="segamegadrive" id="smd">
+                  Sega Mega Drive
+                </label>
+              
+                <label class="console" for="xbox">
+                  <input type="radio" name="game-console" value="x-box" id="xbox">
+                  X-box One S
+                </label>
+
+                <label class="console" for="den">
+                  <input type="radio" name="game-console" value="dendy" id="den">
+                  Dendy
+                </label>
+              </fieldset>
+              
+              
+              <fieldset class="fieldset fieldset_flex-direction_column">
+                <legend class="legend">Настольные игры: </legend>
+
+                <label class="b-games" for="jen">
+                  <input type="checkbox" name="table-game" value="jenga" id="jen">
+                  Jenga
+                </label>
+
+                <label class="b-games" for="monop">
+                  <input type="checkbox" name="table-game" value="monopoly" id="monop">
+                  Monopoly
+                </label>
+
+                <label class="b-games" for="munchk">
+                  <input type="checkbox" name="table-game" value="munchkin" id="munchk">
+                  Манчкин
+                </label>
+
+                <label class="b-games" for="al">
+                  <input type="checkbox" name="table-game" value="alias" id="al">
+                  Alias
+                </label>
+              </fieldset>
+              
+              <fieldset class="fieldset fieldset_flex-direction_column">
+                <legend class="legend">Дополнительно: </legend>
+
+                <label class="more" for="micro">
+                  <input type="checkbox" name="extra" value="micro" id="micro">
+                  Караоке
+                </label>
+
+                <label class="more" for="vr">
+                  <input type="checkbox" name="extra" value="vr" id="vr">
+                  VR
+                </label>
+              </fieldset>
+            </div>
+          </fieldset>
+
+            <fieldset class="fieldset fieldset_date">
+              <legend class="legend">Выбери дату и время </legend>
+
+              <div class="flex-container flex-container_date date">
+                <div class="date__group-1">
+                  <div class="row-group">
+                    <input class="dmy" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Дата" type="date" name="date" id="dt" required>
+
+                    <input class="time" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Время" type="time" name="time" id="tm" required>
+                  </div>
+
+                  <input class="person-number" onfocus="(this.type='number')" onblur="(this.type='text')" placeholder="Сколько человек" type="number" min="1" name="count" id="cnt" required>
+                </div>
+
+                <div class="date__group-2">
+                  <div class="col-group">
+                    <label class="name" for="nme">Имя</label>
+                    <input type="text" name="guest-name" id="nme" required>
+                  </div>
+                  
+                  <div class="col-group">
+                    <label class="surname" for="srnme">Фамилия</label>
+                    <input type="text" name="quest-surname" id="srnme" required>
+                  </div>
+                </div>
+
+                <div class="date__group-3">
+                  <div class="col-group">
+                    <label class="phone-number" for="phn">Номер телефона</label>
+                    <input type="tel" name="guest-pnone-number" id="phn" pattern="^\+?7-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" title="+7-___-___-__-__" required>
+                  </div>
+
+                  <div class="col-group">
+                    <label class="email" for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+
+          <div class="btn-container">
+            <button type="submit">Забронировать</button>
+          </div>
+        </form>  
       </div>
-    </form>
+    </section>
+
+    
+      
+    
 
     <section class="about">
       <div class="container about__container">
@@ -226,11 +259,11 @@
             </div>
             
             <blockquote class="about__blockquote"> 
-              <p class="about__quote">
+              <q class="about__quote">
                 GAME OVER — 
                 <br>
                 это место незабываемых впечатлений
-              </p>
+              </q>
               
               <div class="about__author">
                 <img src="img/boss.png" alt="аркадий абакшин, создатель игровой территории">
@@ -317,7 +350,7 @@
       <div class="flex-container">
         <div class="flex-item">
           <address class="address">
-            <a class="address__location" href="#">г. Москва <br> ул. Аквамарина, 16</a>
+            <p class="address__location" href="#">г. Москва <br> ул. Аквамарина, 16</p>
             <a class="address__tel" href="tel:89509302893">8(950)930-28-93</a>
             <a class="address__mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>   
           </address>
