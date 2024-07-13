@@ -75,6 +75,24 @@ footer {
   justify-content: space-between;
 }
 
+.social-link {
+  display: inline-block;
+  outline: 1px solid transparent;
+}
+
+.social-link:hover {
+  color: #eadeed;
+}
+
+.social-link:focus {
+  outline-color: #cd06ff;
+  color: #eadeed;
+}
+
+.social-link:active {
+  color: #cd06ff;
+}
+
 .footer__container .flex-container_copyright {
   margin-bottom: 0;
   padding-bottom: 10px;
@@ -100,4 +118,3 @@ footer {
   display: block;
   text-indent: 22px;
 }
-

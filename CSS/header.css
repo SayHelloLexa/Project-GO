@@ -33,3 +33,18 @@
   text-transform: uppercase;
   color: #fff;
 }
+
+.tel:hover {
+  border: 3px solid #6C0287;
+  background-color: #6C0287;
+}
+
+.tel:active {
+  border: 1px solid #000;
+}
+
+.tel:focus {
+  outline: none;
+  border: 3px solid #6C0287;
+  background-color: #6C0287;
+}

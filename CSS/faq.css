@@ -23,9 +23,35 @@
   height: 46px;
 }
 
+.faq-list__item:hover:after {
+  content: "";
+  background-image: url("../img/open-purple-hover.svg");
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+
+.faq-list__item:active:after {
+  content: "";
+  background-image: url("../img/open-purple-active.svg");
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+
 .faq-list__item:nth-child(2n):after {
   content: "";
   background-image: url("../img/open.svg");
+}
+
+.faq-list__item:nth-child(2n):hover:after {
+  content: "";
+  background-image: url("../img/open-hover.svg");
+}
+
+.faq-list__item:nth-child(2n):active:after {
+  content: "";
+  background-image: url("../img/open-active.svg");
 }
 
 .faq-list__item:last-child {

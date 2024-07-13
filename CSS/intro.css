@@ -82,11 +82,43 @@
   box-shadow: 0 0 20px #6c0287;
 }
 
+.intro__reserv-link:hover {
+  background-color: #840aa3;
+}
+
+.intro__reserv-link:active {
+  background: #640aa3;
+}
+
+.intro__reserv-link:focus {
+  outline: none;
+  background-color: #840aa3;
+}
+
 .down-button {
   position: absolute;
   bottom: 139px;
   left: 571px;
+  display: inline-block;
+  width: 97px;
+  height: 97px;
+  outline: 1px solid transparent;
+  background-image: url("../img/down-button.svg");
 }
+
+.down-button:hover {
+  background-image: url("../img/down-button-hover.svg");
+}
+
+.down-button:active {
+  background-image: url("../img/down-button-active.svg");
+}
+
+.down-button:focus {
+  outline-color: #cd06ff;
+}
+
+
 
 
 

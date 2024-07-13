@@ -12,6 +12,21 @@
   text-align: center;
 }
 
+.fieldset_date input:focus {
+  outline: none;
+  border: 2px solid #cd06ff;
+}
+
+.fieldset_set input {
+  display: inline-block;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+}
+
+.fieldset_set input:focus {
+  outline-color: #cd06ff;
+}
+
 .legend {
   margin-bottom: 40px;
   font-weight: 700;
@@ -42,6 +57,21 @@
   line-height: 133%;
   text-transform: uppercase;
   color: #000;
+}
+
+.flex-container_rooms label:hover {
+  border: 3px solid #640aa3;
+  background: #eadeed;
+}
+
+.flex-container_rooms label:active {
+  border: 3px solid #fff;
+  color: #fff;
+  background: #6c0287;
+}
+
+.flex-container_rooms label:focus {
+  border: 3px solid #640aa3;
 }
 
 .fieldset_rooms .flex-container {
@@ -154,6 +184,7 @@
   color: #211e1e;
 }
 
+
 .time {
   width: 134px;
   height: 52px;
@@ -252,6 +283,30 @@
   text-transform: uppercase;
   color: #6c0287;
 }
+
+.btn-container button[type="submit"]:hover {
+  border: 3px solid #6c0287;
+  color: #6c0287;
+  background: #eadeed;
+}
+
+.btn-container button[type="submit"]:active {
+  color: #6c0287;
+  background: #eadeed;
+}
+
+.btn-container button[type="submit"]:focus {
+  outline: none;
+  border: 3px solid #6c0287;
+  color: #6c0287;
+  background: #fff;
+}
+
+
+
+
+
+
 
 
 
