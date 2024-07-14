@@ -30,6 +30,20 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
+  outline: 1px solid transparent;
+}
+
+.halls__list-item-link:hover {
+  border: 1px solid #fff;
+}
+
+.halls__list-item-link:active {
+  border: 3px solid #cd06ff;
+}
+
+.halls__list-item-link:focus {
+  outline-offset: 3px;
+  outline-color: #fff;
 }
 
 .halls__list-item-link p {

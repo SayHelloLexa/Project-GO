@@ -62,6 +62,7 @@
 .flex-container_rooms label:hover {
   border: 3px solid #640aa3;
   background: #eadeed;
+  cursor: pointer;
 }
 
 .flex-container_rooms label:active {
@@ -72,6 +73,11 @@
 
 .flex-container_rooms label:focus {
   border: 3px solid #640aa3;
+}
+
+.flex-container_rooms input[type="radio"]:checked + label {
+  border: 3px solid #640aa3;
+  background-color: #cd06ff;
 }
 
 .fieldset_rooms .flex-container {
@@ -276,6 +282,7 @@
 .btn-container button[type="submit"] {
   width: 300px;
   height: 60px;
+  border: none;
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;

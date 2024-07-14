@@ -51,6 +51,14 @@ footer {
   background-repeat: no-repeat;
 }
 
+.address__tel:hover {
+  color: #cd06ff;
+}
+
+.address__tel:active {
+  color: #840AA3;
+}
+
 .address__mail {
   display: flex;
   column-gap: 31px;
@@ -67,6 +75,14 @@ footer {
   height: 35px;
   background-image: url("../img/envelope-icon.svg");
   background-repeat: no-repeat;
+}
+
+.address__mail:hover {
+  color: #cd06ff;
+}
+
+.address__mail:active {
+  color: #840AA3;
 }
 
 .social-list {
@@ -112,9 +128,27 @@ footer {
 .flex-item__span_margin {
   display: block;
   margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.flex-item__span_margin:hover {
+  color: #cd06ff;
+}
+
+.flex-item__span_margin:active {
+  color: #840AA3;
 }
 
 .flex-item__span_indent {
   display: block;
+  font-size: 14px;
   text-indent: 22px;
+}
+
+.flex-item__span_indent:hover {
+  color: #cd06ff;
+}
+
+.flex-item__span_indent:active {
+  color: #840AA3;
 }
