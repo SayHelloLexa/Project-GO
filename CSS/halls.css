@@ -31,19 +31,21 @@
   text-decoration: none;
   color: #fff;
   outline: 1px solid transparent;
+  transition: all .2s linear;
 }
 
 .halls__list-item-link:hover {
-  border: 1px solid #fff;
+  transform: scale(1.1);
 }
 
 .halls__list-item-link:active {
-  border: 3px solid #cd06ff;
+  outline: 3px solid #cd06ff;
+  outline-offset: 3px;
 }
 
 .halls__list-item-link:focus {
+  outline: 3px solid #cd06ff;
   outline-offset: 3px;
-  outline-color: #fff;
 }
 
 .halls__list-item-link p {

@@ -22,6 +22,11 @@
   color: #fff;
 }
 
+.nav-list__link {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s linear, outline .2s linear;
+}
+
 .nav-list__link:hover {
   border-bottom: 1px solid #fff;
 }
@@ -40,6 +45,7 @@
   line-height: 136%;
   text-transform: uppercase;
   color: #fff;
+  transition: background-color .2s linear;
 }
 
 .tel:hover {

@@ -21,6 +21,7 @@
   display: block;
   width: 46px;
   height: 46px;
+  transition: background-image .2s linear;
 }
 
 .faq-list__item:hover:after {
@@ -42,6 +43,7 @@
 .faq-list__item:nth-child(2n):after {
   content: "";
   background-image: url("../img/open.svg");
+  transition: background-image .2s linear;
 }
 
 .faq-list__item:nth-child(2n):hover:after {
