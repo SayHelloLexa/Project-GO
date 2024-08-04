@@ -5,7 +5,7 @@
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-  color: #ffff;
+  color: var(--white);
 }
 
 .halls__list {
@@ -29,7 +29,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   outline: 1px solid transparent;
   transition: all .2s linear;
 }
@@ -39,12 +39,12 @@
 }
 
 .halls__list-item-link:active {
-  outline: 3px solid #cd06ff;
+  outline: 3px solid var(--bright);
   outline-offset: 3px;
 }
 
 .halls__list-item-link:focus {
-  outline: 3px solid #cd06ff;
+  outline: 3px solid var(--bright);
   outline-offset: 3px;
 }
 

@@ -139,7 +139,7 @@
 .fieldset_flex-direction_column label {
   font-weight: 400;
   font-size: 22px;
-  color: #fff;
+  color: var(--white);
 }
 
 .fieldset_date {
@@ -153,7 +153,7 @@
 }
 
 .fieldset_date input:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--bright);
 }
 
 .fieldset_date .flex-container_date {
@@ -243,7 +243,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
-  color: #fff;
+  color: var(--white);
 }
 
 .surname {
@@ -251,7 +251,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
-  color: #fff;
+  color: var(--white);
 }
 
 .date__group-3 {
@@ -269,7 +269,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
-  color: #fff;
+  color: var(--white);
 }
 
 .email {
@@ -277,7 +277,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
-  color: #fff;
+  color: var(--white);
 }
 
 .btn-container {
@@ -293,24 +293,24 @@
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--royal);
   transition: all .2s linear;
 }
 
 .btn-container button[type="submit"]:hover {
-  outline: 3px solid #6c0287;
-  color: #6c0287;
+  outline: 3px solid var(--royal);
+  color: var(--royal);
   background: #eadeed;
 }
 
 .btn-container button[type="submit"]:active {
-  color: #6c0287;
+  color: var(--royal);
   background: #eadeed;
 }
 
 .btn-container button[type="submit"]:focus {
-  outline: 3px solid #6c0287;
-  color: #6c0287;
+  outline: 3px solid var(--royal);
+  color: var(--royal);
   background: #fff;
 }
 

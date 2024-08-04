@@ -21,7 +21,7 @@ footer {
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
-  color: #fff;
+  color: var(--white);
 }
 
 .address__location:before {
@@ -40,7 +40,7 @@ footer {
   font-size: 24px;
   text-decoration: none;
   line-height: 117%;
-  color: #fff;
+  color: var(--white);
   transition: all .2s linear;
 }
 
@@ -53,7 +53,7 @@ footer {
 }
 
 .address__tel:hover {
-  color: #cd06ff;
+  color: var(--bright);
 }
 
 .address__tel:active {
@@ -67,7 +67,7 @@ footer {
   font-size: 24px;
   text-decoration: none;
   line-height: 117%;
-  color: #fff;
+  color: var(--white);
   transition: all .2s linear;
 }
 
@@ -80,7 +80,7 @@ footer {
 }
 
 .address__mail:hover {
-  color: #cd06ff;
+  color: var(--bright);
 }
 
 .address__mail:active {
@@ -109,7 +109,7 @@ footer {
 }
 
 .social-link:active {
-  color: #cd06ff;
+  color: var(--bright);
 }
 
 .footer__container .flex-container_copyright {
@@ -121,7 +121,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 114%;
-  color: #fff;
+  color: var(--white);
 }
 
 .flex-item__span_block {
@@ -136,7 +136,7 @@ footer {
 }
 
 .flex-item__span_margin:hover {
-  color: #cd06ff;
+  color: var(--bright);
 }
 
 .flex-item__span_margin:active {
@@ -151,7 +151,7 @@ footer {
 }
 
 .flex-item__span_indent:hover {
-  color: #cd06ff;
+  color: var(--bright);
 }
 
 .flex-item__span_indent:active {

@@ -13,7 +13,22 @@
 }
 
 .reviews__img {
+  border-radius: 140px;
+  width: 280px;
+  height: 280px;
   margin-bottom: 11px;
+}
+
+.reviews__img_guest-1 {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%), url("../img/guest1.png");
+}
+
+.reviews__img_guest-2 {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%), url("../img/guest2.png");
+}
+
+.reviews__img_guest-3 {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%), url("../img/guest3.png");
 }
 
 .reviews__quote {

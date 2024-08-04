@@ -1,7 +1,8 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 20px;
+  height: 565px;
 }
 
 .menu__item {
@@ -13,7 +14,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
-  color: #fff;
+  color: var(--white);
   transition: transform .2s linear;
 }
 
@@ -26,6 +27,7 @@
 }
 
 .menu__item_audio {
+  align-self: flex-end;
   background-image: url("../img/audio.jpg");
 }
 
@@ -38,6 +40,7 @@
 }
 
 .menu__item_movies {
+  align-self: flex-end;
   background-image: url("../img/movies.jpg");
 }
 
