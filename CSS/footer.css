@@ -248,3 +248,65 @@ footer {
     padding-bottom: 18px;
   }
 }
+
+@media (max-width: 694px) {
+  .footer {
+    padding-top: 15px;
+  }
+
+  .footer .container__title {
+    margin-bottom: 15px;
+  }
+
+  .flex-container {
+    margin-bottom: 63px;
+  }
+
+  .address * {
+    font-size: 14px;
+  }
+
+  .address__location:before, 
+  .address__tel:before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .address__mail:before {
+    width: 22px;
+    height: 20px;
+  }
+
+  .address__location:before {
+    top: -6px;
+    left: 53px;
+  }
+
+  .address__tel, .address__mail {
+    column-gap: 8px;
+  }
+
+  .social-list {
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .social-list__item {
+    width: 30px;
+    height: 30px;
+  } 
+
+  .footer .flex-container_copyright {
+    flex-direction: column;
+    row-gap: 19px;
+  }
+
+  .flex-container_copyright * {
+    font-size: 12px;
+  }
+
+  .flex-item__span_indent {
+    text-indent: 0;
+    text-align: center;
+  }
+}
