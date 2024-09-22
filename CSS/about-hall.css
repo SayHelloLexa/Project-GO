@@ -1,0 +1,26 @@
+.about-hall .container {
+  padding: 0;
+}
+
+.about-hall .container__title {
+  margin-bottom: 40px;
+}
+
+.about-hall .flex-container {
+  align-items: center;
+  column-gap: 80px;
+}
+
+.hall-card {
+  width: 600px;
+  height: 424px;
+}
+
+.about-hall__paragraph {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.about-hall__paragraph:not(:last-child) {
+  margin-bottom: 22px;
+}

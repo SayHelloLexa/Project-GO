@@ -1,0 +1,15 @@
+.description {
+  padding-top: 100px;
+}
+
+.description .container {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.description-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}

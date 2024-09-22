@@ -1,4 +1,4 @@
-footer {
+.footer {
   padding-top: 50px;
   background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
@@ -6,6 +6,10 @@ footer {
 .footer__container .flex-container {
   justify-content: space-between;
   margin-bottom: 156px;
+}
+
+.footer__container_hall {
+  padding: 0;
 }
 
 .address {

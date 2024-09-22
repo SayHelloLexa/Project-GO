@@ -1,8 +1,13 @@
 @import url("normalize.css");
 @import url("global.css");
 @import url("variables.css");
+
+/* ===========
+  main page
+============*/
 @import url("header.css");
 @import url("intro.css");
+@import url("description.css");
 @import url("menu.css");
 @import url("halls.css");
 @import url("form.css");
@@ -11,5 +16,8 @@
 @import url("faq.css");
 @import url("footer.css");
 
-
-
+/* ===========
+  halls pages
+============*/
+@import url("about-hall.css");
+@import url("other-rooms.css");

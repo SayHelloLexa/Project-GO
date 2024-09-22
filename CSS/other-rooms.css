@@ -1,0 +1,58 @@
+.other-rooms .container {
+  padding: 0;
+}
+
+.other-rooms .container__title {
+  margin-bottom: 40px;
+}
+
+.other-rooms__list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.other-rooms__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 380px;
+  min-height: 229px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .2s linear;
+}
+
+.other-rooms__link:hover {
+  transform: scale(1.1);
+}
+
+.other-rooms__link:active {
+  outline: 3px solid var(--bright);
+  outline-offset: 3px;
+}
+
+.other-rooms__link:focus {
+  outline: 3px solid var(--bright);
+  outline-offset: 3px;
+}
+
+.other-rooms__item p {
+  max-width: 170px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.other-rooms__link_west {
+  background-image: url("../img/wild-west.jpg");
+}
+
+.other-rooms__link_star {
+  background-image: url("../img/star-wars.jpg");
+}
+
+.other-rooms__link_neon {
+  background-image: url("../img/neon-style.jpg");
+}
