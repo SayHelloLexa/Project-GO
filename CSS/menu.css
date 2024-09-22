@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
-  height: 565px;
+  min-height: 565px;
 }
 
 .menu__item {
@@ -11,8 +11,8 @@
   height: 228px;
   padding-top: 166px;
   padding-left: 40px;
-  font-weight: 700;
-  font-size: 20px;
+  background-size: cover;
+  font-weight: var(--bold);
   line-height: 140%;
   color: var(--white);
   transition: transform .2s linear;
@@ -46,4 +46,85 @@
 
 .menu__item_playstation {
   background-image: url("../img/playstation.jpg");
+}
+
+@media (max-width: 1247px) {
+  .menu {
+    padding-top: calc(83px / 2);
+    padding-bottom: calc(70px / 2);
+  }
+
+  .menu__list {
+    min-height: 408px;
+  }
+  
+  .menu__item {
+    width: 287px;
+    height: 172px;
+    padding-top: 114px;
+    padding-left: 20px;
+  }
+
+  .menu__item_audio {
+    padding-top: 114px;
+  }
+
+  .menu__item_movies {
+    font-size: 20px;
+    padding-top: 83px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  .menu {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .menu .container__title {
+    margin-bottom: 30px;
+  }
+
+  .menu__list {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu__item {
+    width: 334px;
+    height: 200px;
+    padding-top: 132px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 694px) {
+  .menu {
+    padding-top: calc(46px / 2);
+    padding-bottom: 15px;
+  }
+
+  .menu__list {
+    min-height: 245px;
+    gap: 10px;
+  }
+
+  .menu__item {
+    width: 135px;
+    height: 75px;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
+  .menu__item_karaoke {
+    padding-right: 13px;
+    line-height: 140%;
+  }
+
+  .menu__item_movies {
+    padding-right: 18px;
+  }
 }

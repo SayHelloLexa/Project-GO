@@ -1,11 +1,11 @@
 .reserv {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #440f51;
 }
 
 .reservation-form {
-  padding-top: 50px;
-  padding-bottom: 80px;
-  color: #ffff;
+  color: var(--white);
 }
 
 .fieldset {
@@ -19,19 +19,21 @@
 }
 
 .fieldset_set input:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--bright);
 }
 
 .legend {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 40px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 24px;
   line-height: 117%;
-  text-align: center;
-  color: #fff;
+  color: var(--white);
 }
 
-.flex-container_rooms {
+.fieldset_rooms {
   margin-bottom: 60px;
 }
 
@@ -46,12 +48,12 @@
   width: 250px;
   height: 55px;
   border-radius: 8px;
-  background: #fff;
-  font-weight: 700;
+  background: var(--white);
+  font-weight: var(--bold);
   font-size: 30px;
   line-height: 133%;
   text-transform: uppercase;
-  color: #000;
+  color: var(--dark);
   outline: 3px solid transparent;
   transition: all .2s linear;
 }
@@ -63,9 +65,9 @@
 }
 
 .flex-container_rooms label:active {
-  outline: 3px solid #fff;
-  color: #fff;
-  background: #6c0287;
+  outline: 3px solid var(--white);
+  color: var(--white);
+  background: var(--royal);
 }
 
 .flex-container_rooms label:focus {
@@ -74,7 +76,7 @@
 
 .flex-container_rooms input[type="radio"]:checked + label {
   outline: 3px solid #640aa3;
-  background-color: #cd06ff;
+  background-color: var(--bright);
 }
 
 .fieldset_rooms .flex-container {
@@ -83,14 +85,13 @@
 }
 
 .fieldset_set {
-  width: 1080px;
   padding-left: 100px;
+  margin-bottom: 60px;
 }
 
 .fieldset_set .flex-container_console {
   flex-grow: 1;
-  margin-bottom: 60px;
-  column-gap: 100px;
+  column-gap: 174px;
 }
 
 .fieldset_flex-direction_column {
@@ -137,6 +138,7 @@
 }
 
 .fieldset_flex-direction_column label {
+  align-items: center;
   font-weight: 400;
   font-size: 22px;
   color: var(--white);
@@ -189,7 +191,7 @@
 }
 
 .dmy::placeholder {
-  font-weight: 400;
+  font-weight: var(--regular);
   font-size: 18px;
   line-height: 156%;
   color: #211e1e;
@@ -203,7 +205,7 @@
 }
 
 .time::placeholder {
-  font-weight: 400;
+  font-weight: var(--regular);
   font-size: 18px;
   line-height: 156%;
   color: #211e1e;
@@ -216,7 +218,7 @@
 }
 
 .person-number::placeholder {
-  font-weight: 400;
+  font-weight: var(--regular);
   font-size: 18px;
   line-height: 156%;
   color: #211e1e;
@@ -240,7 +242,7 @@
 
 .name {
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 14px;
   line-height: 114%;
   color: var(--white);
@@ -248,7 +250,7 @@
 
 .surname {
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 14px;
   line-height: 114%;
   color: var(--white);
@@ -266,7 +268,7 @@
 
 .phone-number {
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 14px;
   line-height: 114%;
   color: var(--white);
@@ -274,7 +276,7 @@
 
 .email {
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 14px;
   line-height: 114%;
   color: var(--white);
@@ -289,11 +291,12 @@
   height: 60px;
   border: none;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
   color: var(--royal);
+  box-shadow: 0 0 20px var(--white);
   transition: all .2s linear;
 }
 
@@ -311,28 +314,224 @@
 .btn-container button[type="submit"]:focus {
   outline: 3px solid var(--royal);
   color: var(--royal);
-  background: #fff;
+  background: var(--white);
 }
 
+@media (max-width: 1247px) {
+  .reserv {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .reservation-form {
+    padding-top: 0;
+  }
+
+  .reserv .container__title {
+    margin-bottom: 43px;
+  }
+
+  .legend {
+    margin-bottom: 26px;
+  }
+
+  .flex-container_rooms label {
+    width: 180px;
+    height: 44px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .fieldset_set {
+    padding: 0;
+  }
 
 
+  .fieldset_set .flex-container_console {
+    column-gap: 110px;
+  }
 
+  .fieldset_date {
+    padding: 0;
+  }
 
+  .col-group input {
+    width: 251px;
+    height: 52px;
+  }
 
+  .btn-container {
+    padding-left: 650px;
+  }
 
+  .btn-container button[type="submit"] {
+    width: 254px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
 
+@media (max-width: 910px) {
+  .reserv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  .reserv .container__title {
+    margin-bottom: 40px;
+  }
 
+  .legend {
+    margin-bottom: 30px;
+  }
 
+  .fieldset_rooms {
+    margin-bottom: 50px;
+  }
 
+  .fieldset_rooms .flex-container {
+    column-gap: 29px;
+  }
 
+  .flex-container_rooms label {
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+  }
 
+  .fieldset_set .flex-container_console {
+    flex-wrap: wrap;
+    column-gap: 66px;
+    row-gap: 32px;
+  }
 
+  .flex-container_console .legend {
+    margin-bottom: 24px;
+  }
 
+  .flex-container_console input {
+    width: 40px;
+    height: 40px;
+  }
 
+  .fieldset_set {
+    margin-bottom: 50px;
+  }
 
+  .fieldset_date .flex-container_date  {
+    flex-wrap: wrap;
+    row-gap: 42px;
+    column-gap: 108px;
+    margin-bottom: 48px;
+  }
 
+  .row-group {
+    column-gap: 14px;
+  }
 
+  .date__group-1 {
+    flex-direction: row;
+    column-gap: 108px;
+  }
 
+  .date__group-2 input {
+    width: 281px;
+  }
 
+  .date__group-3 input {
+    width: 300px;
+  }
 
+  .btn-container {
+    padding-left: 389px;
+  }
+
+  .btn-container button[type="submit"] {
+    width: 300px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 694px) {
+  .reserv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .legend {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .fieldset_rooms {
+    margin-bottom: 30px;
+  }
+
+  .fieldset_rooms .flex-container {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 14px;
+  }
+
+  .flex-container_rooms label {
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .fieldset_set {
+    margin-bottom: 30px;
+  }
+
+  .flex-container_console .legend {
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .flex-container_console label {
+    column-gap: 20px;
+    font-size: 1rem;
+  }
+
+  .flex-container_console input {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fieldset_date .flex-container_date {
+    row-gap: 35px;
+  }
+
+  .row-group {
+    column-gap: 12px;
+  }
+
+  .date__group-1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+  }
+
+  .time {
+    width: ;
+  }
+
+  .person-number {
+    width: 280px;
+  }
+
+  .date__group-3 input {
+    width: 280px;
+  }
+
+  .btn-container {
+    padding-left: 0;
+  }
+
+  .btn-container button[type="submit"] {
+    width: 280px;
+    border-radius: 4px;
+  }
+}

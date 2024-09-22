@@ -1,6 +1,10 @@
+.halls {
+  padding-bottom: 100px;
+}
+
 .halls__title {
   margin-bottom: 60px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 40px;
   line-height: 125%;
   text-transform: uppercase;
@@ -10,7 +14,6 @@
 
 .halls__list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -23,7 +26,7 @@
   padding-bottom: 95px;
   background-size: cover;
   background-position: center;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 70px;
   line-height: 114%;
   text-transform: uppercase;
@@ -67,4 +70,67 @@
 
 .halls__list-item-link_neon {
   background-image: url("../img/neon-style.jpg");
+}
+
+@media (max-width: 1247px) {
+  .halls {
+    padding-top: 59px;
+    padding-bottom: 70px;
+  }
+
+  .halls__title {
+    margin-bottom: 36px;
+  }
+
+  .halls__list-item-link {
+    width: 441px;
+    height: 267px;
+    padding-top: 73px;
+    padding-bottom: 74px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 910px) {
+  .halls {
+    padding-top: 30px;
+    padding-bottom: 62px;
+  }
+
+  .halls__list {
+    column-gap: 20px;
+    row-gap: 17px;
+  }
+
+  .halls__list-item-link {
+    width: 334px;
+    height: 200px;
+    padding-top: 62px;
+    padding-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .halls__list-item-link p {
+    max-width: 121px;
+  }
+}
+
+@media (max-width: 694px) {
+  .halls {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .halls__list {
+    row-gap: 10px;
+  }
+
+  .halls__list-item-link {
+    width: 280px;
+    height: 168px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 26px;
+    line-height: 131%;
+  }
 }

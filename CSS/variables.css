@@ -1,6 +1,10 @@
 :root {
   --white: #fff;
-  --black: #000;
+  --dark: #000;
   --bright: #cd06ff;
   --royal: #6C0287;
+  --font-family: Arial, sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --black: 900;
 }

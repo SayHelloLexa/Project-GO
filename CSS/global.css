@@ -20,12 +20,11 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
-  font-weight: 400;
-  color: white;
+  font-weight: var(--regular);
+  color: var(--white);
   background-color: #1B1A1B;
-  position: relative;
 }
 
 address {
@@ -127,10 +126,51 @@ section {
 
 .container__title {
   margin-bottom: 54px;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 40px;
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--white);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+@media (max-width: 1247px) {
+  .container {
+    max-width: 904px;
+    padding: 0;
+  }
+
+  .container__title {
+    margin-bottom: 36px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 910px) {
+  .container {
+    max-width: 688px;
+  }
+
+  .container__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 694px) {
+  .container {
+    max-width: 280px;
+  }
+
+  .container__title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
