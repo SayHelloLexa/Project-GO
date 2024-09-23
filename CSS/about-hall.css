@@ -14,6 +14,7 @@
 .hall-card {
   width: 600px;
   height: 424px;
+  object-fit: cover;
 }
 
 .about-hall__paragraph {
@@ -23,4 +24,77 @@
 
 .about-hall__paragraph:not(:last-child) {
   margin-bottom: 22px;
+}
+
+@media (max-width: 1247px) {
+  .about-hall {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .about-hall .flex-container {
+    column-gap: 30px;
+  }
+
+  .hall-card {
+    width: 461px;
+    height: 326px;
+  }
+
+  .about-hall__paragraph {
+    font-size: 18px;
+    line-height: 156%;
+  }
+}
+
+@media (max-width: 910px) {
+  .about-hall {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-hall .flex-container {
+    column-gap: 46px;
+  }
+
+  .hall-card {
+    width: 329px;
+    height: 326px;
+  }
+
+  .about-hall__paragraph {
+    font-size: 1rem;
+    line-height: 175%;
+  }
+}
+
+@media (max-width: 694px) {
+  .about-hall {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .about-hall .container__title {
+    margin-bottom: 15px;
+  }
+
+  .about-hall .flex-container {
+    margin-bottom: 0;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .hall-card {
+    width: 280px;
+    height: 180px;
+  }
+
+  .about-hall__paragraph {
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .about-hall__paragraph:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }

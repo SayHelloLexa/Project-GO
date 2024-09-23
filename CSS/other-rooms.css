@@ -45,6 +45,10 @@
   text-transform: uppercase;
 }
 
+.other-rooms__link_vibes {
+  background-image: url("../img/80\'s\ vibes.jpg");
+}
+
 .other-rooms__link_west {
   background-image: url("../img/wild-west.jpg");
 }
@@ -55,4 +59,59 @@
 
 .other-rooms__link_neon {
   background-image: url("../img/neon-style.jpg");
+}
+
+@media (max-width: 1247px) {
+  .other-rooms {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .other-rooms__link {
+    min-width: 288px;
+    min-height: 172px;
+  }
+}
+
+@media (max-width: 910px) {
+  .other-rooms {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .other-rooms__list {
+    column-gap: 8px;
+  }
+
+  .other-rooms__link {
+    min-width: 224px;
+    min-height: 134px;
+    font-size: 20px;
+  }
+
+  .other-rooms__item p {
+    max-width: 114px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 694px) {
+  .other-rooms {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .other-rooms .container__title {
+    margin-bottom: 15px;
+  }
+
+  .other-rooms__list {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  
+  .other-rooms__link {
+    min-width: 280px;
+    min-height: 140px;
+  }
 }

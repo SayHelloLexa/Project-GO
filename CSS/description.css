@@ -13,3 +13,43 @@
   line-height: 150%;
   text-align: center;
 }
+
+@media (max-width: 1247px) {
+  .description {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+
+  .description-text {
+    font-size: 20px;
+  }
+
+  .description .container {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
+
+@media (max-width: 910px) {
+  .description {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .description-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .description .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 694px) {
+  .description {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+}

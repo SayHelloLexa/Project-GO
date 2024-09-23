@@ -1,8 +1,24 @@
 .intro_halls {
   padding: 0;
-  background-image: url("../img/80\'s\ vibes\ background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.intro_vibe-hall {
+  background-image: url("../img/80\'s\ vibes\ background.jpg");
+}
+
+.intro_star-hall {
+  background-image: url("../img/star-wars\ background.jpg");
+}
+
+.intro_west-hall {
+  background-image: url("../img/wild-west\ background.jpg");
+}
+
+.intro_neon-hall {
+  background-image: url("../img/neon-style\ background.jpg");
 }
 
 .intro__container {
@@ -27,6 +43,7 @@
 }
 
 .intro__title_halls {
+  margin: 0;
   font-weight: 700;
   font-size: 90px;
   line-height: 89%;
@@ -38,8 +55,18 @@
   position: absolute;
   left: 30px;
   top: -47px;
+  border-bottom: 1px solid transparent;
   font-weight: 700;
   font-size: 22px;
+  transition: border-bottom .2s linear, outline .2s linear;
+}
+
+.back-link:hover {
+  border-color: var(--white);
+}
+
+.back-link:active {
+  border-color: var(--bright);
 }
 
 .back-link:before {
@@ -198,13 +225,25 @@
     padding-bottom: calc(83px / 2);
   }
 
+  .intro_halls {
+    padding: 0;
+  }
+
   .intro__container {
     min-height: 583px;
+  }
+
+  .intro__container_halls {
+    min-height: 534px;
   }
 
   .intro__title {
     margin-bottom: 16px;
     font-size: 120px;
+  }
+
+  .intro__title_halls {
+    margin-bottom: 0;
   }
 
   .intro__title:after {
@@ -220,6 +259,11 @@
   .intro__aside {
     padding-top: 36px;
     margin-bottom: 80px;
+  }
+
+  .back-link {
+    left: -1px;
+    top: -58px;
   }
 
   .column__span {
@@ -258,13 +302,26 @@
     padding-bottom: 40px;
   }
 
+  .intro_halls {
+    padding: 0;
+  }
+
   .intro__container {
     min-height: 537px;
+  }
+
+  .intro__container_halls {
+    min-height: 402px;
   }
 
   .intro__title {
     margin-bottom: 20px;
     font-size: 86px;
+  }
+
+  .intro__title_halls {
+    margin-bottom: 0;
+    font-size: 60px;
   }
 
   .intro__title:after {
@@ -281,6 +338,12 @@
     padding-top: 52px;
     margin-bottom: 100px;
     column-gap: 30px;
+  }
+
+  .back-link {
+    left: 2px;
+    top: -62px;
+    font-size: 16px;
   }
 
   .column__span {
@@ -319,13 +382,26 @@
     padding-bottom: calc(46px / 2);
   }
 
+  .intro_halls {
+    padding: 0;
+  }
+
   .intro__container {
     min-height: 204px;
+  }
+
+  .intro__container_halls {
+    min-height: 168px;
   }
 
   .intro__title {
     margin-bottom: 6px;
     font-size: 35px;
+  }
+
+  .intro__title_halls {
+    margin: 0;
+    font-size: 30px;
   }
 
   .intro__title:after {
@@ -342,6 +418,18 @@
     padding-top: 10px;
     margin-bottom: 30px;
     column-gap: 20px;
+  }
+
+  .back-link {
+    left: 0;
+    top: -29px;
+    font-size: 12px;
+  }
+
+  .back-link:before {
+    width: 17px;
+    height: 8px;
+    margin-right: 5px;
   }
 
   .column__span {
