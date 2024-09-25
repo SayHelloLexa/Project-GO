@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .header__nav {
     display: none;
   }
@@ -162,7 +162,7 @@
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .header {
     padding-top: 20px;
   }

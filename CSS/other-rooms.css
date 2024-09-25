@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .other-rooms {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .other-rooms {
     padding-top: 15px;
     padding-bottom: 15px;

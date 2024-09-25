@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .halls {
     padding-top: 30px;
     padding-bottom: 62px;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .halls {
     padding-top: 15px;
     padding-bottom: 30px;

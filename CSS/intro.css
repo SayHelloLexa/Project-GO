@@ -297,7 +297,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .intro {
     padding-bottom: 40px;
   }
@@ -376,7 +376,7 @@
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .intro {
     padding-top: 20px;
     padding-bottom: calc(46px / 2);

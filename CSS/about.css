@@ -84,6 +84,14 @@
   text-transform: none;
 }
 
+.boss {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-image: url("../img/boss.jpg");
+  background-size: cover;
+}
+
 .cite {
   display: inline-block;
   white-space: pre-line;
@@ -147,7 +155,7 @@
     column-gap: 35px;
   }
 
-  .about__author img {
+  .boss {
     width: 70px;
     height: 70px;
   }
@@ -158,7 +166,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .about {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -215,11 +223,10 @@
 
   .about__quote:after {
     left: 549px;
-
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .about {
     padding-top: 30px;
     padding-bottom: 15px;
@@ -282,6 +289,11 @@
     align-items: center;
     padding-left: 0;
     column-gap: 11px;
+  }
+
+  .boss {
+    width: 56px;
+    height: 56px;
   }
 
   .cite {

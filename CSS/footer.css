@@ -198,7 +198,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .footer {
     padding-top: 30px;
   }
@@ -257,7 +257,7 @@
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .footer {
     padding-top: 15px;
   }

@@ -155,7 +155,7 @@ section {
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
   .container {
     max-width: 688px;
   }
@@ -165,7 +165,7 @@ section {
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 730px) {
   .container {
     max-width: 280px;
   }
